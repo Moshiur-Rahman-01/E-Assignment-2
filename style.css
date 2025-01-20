@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common styles start */
+.quicksand{
+    font-family: "Quicksand", serif;
+    background-image: url('assets/bg.png');
+}
+.black{
+    color: #111111;
+}
+.orange{
+    color: orange;
+}
+.sky-blue{
+    color: #01ACFD;
+}
+.color-3{
+    color: #05D4DF;
+}
+.beguni{
+    color: rgba(93, 88, 239, 1);
+}
+.white{
+    color: white;
+}
+/* common styles end */
+
+/* nav style start */
+.nav-container{
+    max-width: 1160px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.part-1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 11px;
+}
+.part-1>h2{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 30px;
+}
+.part-2 ul{
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+    list-style: none;
+    gap: 32px;
+}
+.part-2 ul li a{
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 30px;
+}
+.part-2 ul a{
+    text-decoration: none;
+}
+.part-3>button{
+    line-height: 30px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 10px 60.5px;
+    border-radius: 12px;
+    border: none;
+    background-color: orange;
+}
+/* nav style end */
+
+/* banner styles start */
+.banner-container{
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.banner-content>h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 61px;
+    margin-bottom: 24px;
+}
+.banner-content>p{
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+}
+.banner-content>button{
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-weight: 700;
+    padding: 10px 47px;
+    background-color:#111111;
+    border: none;
+    border-radius: 12px;
+}
+/* banner styles end */
+
+/* section-1 style start */
+.section-1 > .title{
+    text-align: center;
+    margin: 60px auto 80px;
+    font-size: 2.875rem;
+    font-weight: 700;
+    line-height: 57.5px;
+}
+/* section-1 style end */
+
+
+/* responsive styles for mobile */
+@media screen and (max-width:576px) {
+    .nav-container .part-1 h2,
+    .nav-container .part-2,
+    .nav-container .part-3
+    {
+        display: none;
+    }
+    .banner-container{
+        max-width: 358px;
+        margin: 12px auto;
+    }
+}
