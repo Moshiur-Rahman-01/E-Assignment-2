@@ -194,8 +194,116 @@ hr{
     margin-bottom: 60px;
     /* font-weight: bold; */
 }
+.arrow-btn>button:hover{
+    background-color: tomato;
+}
 /* section-1 style end */
 
+/* section-2 style start */
+.section-2{
+    width: 100%;
+    background-image: linear-gradient(to top,#FEA301,white);
+}
+.section-2>.title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 57.5px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.special-card{
+    max-width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 19.17px;
+    margin-bottom: 80px;
+}
+.card-1{
+    grid-row: 1 / span 2;
+    border-radius: 16px;
+    background-color: white;
+}
+.card-1>.special-btn-1> button{
+    font-family: "Raleway", serif;
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: white;
+    padding: 14.38px 18.88px 15.34px 19.17px;
+    border: none;
+    border-radius: 47.93px;
+    background-color: #3CD8E8;
+}
+.special-btn-1{
+    margin-left: 38.35px;
+    margin-top: -30px;
+}
+.card-1>img{
+    border-radius: 16px 16px 0px 0px;
+}
+.card-1>h3{
+    padding: 33.55px 38.35px 47.93px 38.35px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 38.3px;
+}
+.card-1>p{
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: #666666;
+    padding: 0px 68.86px 34.52px 38.35px;
+}
+
+.card-2{
+    border-radius: 16px;
+    background-color: white;
+}
+.card-2>img{
+    border-radius: 16px 16px 0px 0px;
+}
+.card-2>h5{
+    font-weight: bold;
+    font-size: 15.34px;
+    line-height: 28.8px;
+    padding: 23.97px 54.75px 33.55px 37.51px;
+}
+.card-2>.special-btn-2> button{
+    font-family: "Raleway", serif;
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: white;
+    padding: 9.59px 18.88px 10.55px 19.17px;
+    border: none;
+    border-radius: 47.93px;
+    background-color: #95B226;
+}
+.special-btn-2{
+    margin-left: 37.91px;
+    margin-top: -25px;
+}
+.view-btn{
+    text-align: center;
+}
+.section-2>.view-btn> button{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    color: white;
+    padding: 10px 61px;
+    border-radius: 10px;
+    border: none;
+    background-color: #111111;
+    margin-bottom: 60px;
+}
+#a{
+    background-color: #5D58F0;
+    color: white;
+}
+/* section-2 style end */
 
 /* responsive styles for mobile */
 @media screen and (max-width:576px) {
@@ -250,6 +358,7 @@ hr{
     }
     .section-1 > .title{
         margin: 40px auto 20px;
+        font-size: 26px;
     }
 }
 
