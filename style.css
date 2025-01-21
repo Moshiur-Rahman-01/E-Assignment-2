@@ -388,7 +388,7 @@ footer{
     hr{
         display: block;
         margin-bottom: 8px;
-        border-color: orange;
+        border: 1px solid orange;
     }
     .banner-container{
         max-width: 358px;
