@@ -76,6 +76,12 @@ header{
     border: none;
     background-color: orange;
 }
+#menu{
+    display: none;
+}
+hr{
+    display: none;
+}
 /* nav style end */
 
 /* banner styles start */
@@ -185,12 +191,31 @@ header{
 @media screen and (max-width:576px) {
     .nav-container .part-1 h2,
     .nav-container .part-2,
-    .nav-container .part-3
+    .nav-container .part-3 button
     {
         display: none;
     }
-    .banner-container{
+    .nav-container{
         max-width: 358px;
         margin: 12px auto;
+    }
+    #menu{
+        display: block;
+        font-size: 2rem;
+    }
+    hr{
+        display: block;
+        margin-bottom: 8px;
+        border-color: orange;
+    }
+    .banner-container{
+        max-width: 358px;
+        flex-direction: column-reverse;
+        text-align: center;
+        
+    }
+    .banner-image img{
+        width: 100%;
+        height: 100%;
     }
 }
