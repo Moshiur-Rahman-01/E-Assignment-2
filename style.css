@@ -137,8 +137,18 @@ hr{
     padding: 52.82px 40.67px 53.76px 40.88px;
     text-align: center;
     border-radius: 18.86px;
-    background-color: antiquewhite;
-    
+}
+.gradient-1{
+    background-image: linear-gradient(to bottom,#DEF5FF,white,white,white);
+    border: 1px solid #DEF5FF;
+}
+.gradient-2{
+    background-image: linear-gradient(to bottom,#FFF4DC,white,white,white);
+    border: 1px solid #FFF4DC;
+}
+.gradient-3{
+    background-image: linear-gradient(to bottom,#F2E8FF,white,white,white);
+    border: 1px solid #F2E8FF;
 }
 .card>h3{
     font-size: 1.5325rem;
@@ -191,7 +201,8 @@ hr{
 @media screen and (max-width:576px) {
     .nav-container .part-1 h2,
     .nav-container .part-2,
-    .nav-container .part-3 button
+    .nav-container .part-3 button,
+    .arrow-btn
     {
         display: none;
     }
@@ -212,6 +223,7 @@ hr{
         max-width: 358px;
         flex-direction: column-reverse;
         text-align: center;
+        gap: 0px;
         
     }
     .banner-image img{
@@ -221,7 +233,7 @@ hr{
     }
     .banner-content>h1{
         font-size: 2rem;
-        line-height: auto;
+        line-height: normal;
         margin-bottom: 18px;
     }
     .banner-content>p{
@@ -231,4 +243,13 @@ hr{
     .banner-content>button{
         margin-bottom: 20px;
     }
+    /* section-1 */
+    .card-container{
+        flex-direction: column;
+        gap: 12.3px;
+    }
+    .section-1 > .title{
+        margin: 40px auto 20px;
+    }
 }
+
