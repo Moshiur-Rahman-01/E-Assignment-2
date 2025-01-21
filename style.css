@@ -202,7 +202,8 @@ hr{
 /* section-2 style start */
 .section-2{
     width: 100%;
-    background-image: linear-gradient(to top,#FEA301,white);
+    background-image: linear-gradient(to top,rgba(254, 163, 1, 0.3),white);
+    
 }
 .section-2>.title{
     text-align: center;
@@ -299,18 +300,80 @@ hr{
     background-color: #111111;
     margin-bottom: 60px;
 }
-#a{
+#aa{
     background-color: #5D58F0;
     color: white;
 }
 /* section-2 style end */
 
+
+/* footer style start */
+footer{
+    width: 100%;
+    background-color: #01ACFD;
+    padding: 140px 0px;
+    color: white;
+}
+.footer-container{
+    max-width: 1160px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.part-11>.a1{
+    display: flex;
+    gap: 10.7px;
+    margin-bottom: 35.35px;
+}
+.a1>img{
+    width: 82.9px;
+    height: 81.65px;
+    background-color: white;
+}
+.a1>h1{
+    font-size: 42.14px;
+    font-weight: bold;
+    line-height: 39.5px;
+}
+.a1>p{
+    font-size: 20px;
+}
+
+.part-22>h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+.part-22>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.part-22>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+.part-33>h2{
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+.social-icon{
+    display: flex;
+    gap: 10.15px;
+}
+/* footer style end */
 /* responsive styles for mobile */
 @media screen and (max-width:576px) {
     .nav-container .part-1 h2,
     .nav-container .part-2,
     .nav-container .part-3 button,
-    .arrow-btn
+    .arrow-btn,
+    .section-2>.special-card>.card-1
     {
         display: none;
     }
@@ -359,6 +422,46 @@ hr{
     .section-1 > .title{
         margin: 40px auto 20px;
         font-size: 26px;
+    }
+    /* .section-2{
+        max-width: 358px;
+        margin: 20px auto;
+    } */
+    .section-2>.special-card{
+        max-width: 358px;
+        margin: 20px auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 11.31px;
+    }
+    .card-2{
+        border-radius: 9.53px;
+    }
+    .card-2>img{
+        border-radius: 9.53px 9.53px 0px 0px;
+        width: 173.27px;
+        height: 105.39px;
+    }
+    .card-2>h5{
+        font-size: 9.13px;
+        line-height: 17.1px;
+        padding: 14.27px 32.6px 19.98px 22.57px;
+    }
+    .card-2>.special-btn-2> button{
+        font-size: 9.13px;
+        line-height: 17.1px;
+        padding: 5.71px 11.24px 6.28px 11.42px;
+        border-radius: 28.54px;
+    }
+    .special-btn-2{
+        margin-left: 22.57px;
+        margin-top: -20px;
+    }
+
+    .footer-container{
+        max-width: 358px;
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 32px;
     }
 }
 
